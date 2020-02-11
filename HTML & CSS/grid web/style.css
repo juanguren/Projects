@@ -1,4 +1,18 @@
 
+/* Variables */
+
+:root{
+    --primary: silver;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104, 0.8);
+}
+
+html{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 @media(min-width:1200px){
 }
 
