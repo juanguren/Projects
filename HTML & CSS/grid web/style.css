@@ -13,6 +13,84 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body{
+    margin: 30px 30px;
+    line-height: 1.4;
+}
+
+.btn{
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    gap: 20px;
+}
+
+
+/* SECTION Navigation */
+
+.main-nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    gap: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.main-nav a{
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.main-nav a:hover{
+    background: var(--dark);
+    color: var(--light);
+}
+
+/* SECTION Top Container */
+
+.top-container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: /* Organized contend easily. Content is called by first naming them with "grid-area" (any name can be used) */
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
+}
+
+/* Naming each element for calling them with "grid-template-areas" */
+
+.showcase{
+    grid-area: showcase;
+    min-height: 20em;
+    background: url(img/tech.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+}
+
+.top-box-a{
+    grid-area: top-box-a;
+}
+
+.top-box-b{
+    grid-area: top-box-b;
+}
+
 @media(min-width:1200px){
 }
 
