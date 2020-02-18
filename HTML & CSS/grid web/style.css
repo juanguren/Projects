@@ -67,7 +67,7 @@ img{
 .top-container{
     display: grid;
     gap: 20px;
-    grid-template-areas: /* Organized contend easily. Content is called by first naming them with "grid-area" (any name can be used) */
+    grid-template-areas: /* Organize contend easily. Content is called by first naming them with "grid-area" (any name can be used) */
     "showcase showcase top-box-a"
     "showcase showcase top-box-b";
 }
@@ -79,16 +79,63 @@ img{
     min-height: 20em;
     background: url(img/tech.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center left;
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h1{
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: var(--light);
+}
+
+.showcase p{
+    font-size: 1rem;
+    margin-top: 0;
+    color: var(--light);
+}
+
+/* Top Box */
+
+.top-box{
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+}
+
+.top-box .price{
+    font-size: 1.5rem;
 }
 
 .top-box-a{
     grid-area: top-box-a;
+    padding-top: 1rem;
 }
 
 .top-box-b{
     grid-area: top-box-b;
+    padding-top: 2rem;
+}
+
+/* SECTION BOXES */
+
+.boxes{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box{
+    background: var(--primary);   
+    text-align: center;
+    padding: 1rem;
 }
 
 @media(min-width:1200px){
@@ -101,4 +148,5 @@ img{
 }
 
 @media(max-width:767px){
+
 }
