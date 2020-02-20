@@ -161,6 +161,10 @@ img{
     box-shadow: var(--shadow);
 }
 
+.msg-text{
+    color: crimson;
+}
+
 /*SECTION FOOTER */
 
 footer{
@@ -202,6 +206,14 @@ footer{
     }
 
     .info .btn{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    /* SECTION BUTTON JS */
+
+    .btn-refresh .btn{
         display: block;
         text-align: center;
         margin: auto;
