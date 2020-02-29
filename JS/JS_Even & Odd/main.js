@@ -46,7 +46,7 @@ try {
     }
 
 } catch (error) {
-    console.log(error);
+    console.log(e.message + " " + error);
 }
 
 console.log("even numbers are: " + evenNumbers);
