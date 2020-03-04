@@ -21,7 +21,7 @@ const node = document.createElement("li");
 const textn = document.createTextNode("Item 5 (test for adding new items)");
 node.classList.add("list-group-item");
 node.appendChild(textn);
-document.querySelector("#items").appendChild(node);
+itemList.appendChild(node);
 
 //item.addEventListener("keydown", runEvent); Logs keys being pressed
 
