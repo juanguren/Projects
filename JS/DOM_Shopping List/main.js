@@ -75,9 +75,10 @@ function searchItem(x) {
         // Grab items exact content. Given that the previous array outputs x ammount of html components (x = ammount of items)
         var itemName = item.firstChild.textContent; // textContent grabs the entire, specific content of the child. --> innerText doesn´t work
         // Compares the typed input with the items exact name and index within the array
-        if(itemName.toLowerCase().indexOf(text) != -1){ // != -1 means a match was made, so that element occupies the whole section as a block 
+        if(itemName.toLowerCase().indexOf(text) != -1){ /* -1 outputs apparently every time there´s no match, so the != implies we´re
+            looking for the opposite. WHEN THERE IS ACTUALLY A MATCH. Thus that element occupies the whole section as a block */
             item.style.display = "block";
-        } else{ // while there´s no match, all items are hidden
+        } else{ // while there´s no match, unrelated items are kept hidden
             item.style.display = "none";            
         }
         
