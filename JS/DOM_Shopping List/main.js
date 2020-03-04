@@ -25,6 +25,11 @@ function addItem(b){
         // Add new Items to the list
         newLi.classList.add("list-group-item");
         newLi.appendChild(listText);
+        // NOTE Adding values
+        for(let i = 0; i<arrayList.length; i++){
+            newLi.value = i;
+        }
+        
         // Appends newly created <li> (with its text) to the <ul>
         ul.appendChild(newLi);
         // Create and append buttons to each added items
@@ -52,7 +57,14 @@ function removeItem(c){
     if (c.target.classList.contains("delete")){
         if (confirm("Are you sure you want to delete it?")) {
             var li = c.target.parentElement;            
-            ul.removeChild(li);            
+            ul.removeChild(li);   
+        } // NOTE Loop para eliminar también del arreglo
+         for(let i = 0; i<arrayList.length; i++){
+            if (arrayList.indexOf(arrayList[i]) === newLi.value) {
+                console.log(arrayList.indexOf(arrayList[i]));
+                console.log(newLi.value);
+                
+            }
         }
     }
 }
