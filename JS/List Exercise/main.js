@@ -20,17 +20,21 @@ class Users{
 
 var users = [];
 
-// Add event for capturing info
+var userInput1;
+var userInput2;
+var userInput3;
+var userInput4;
 
+// Add event for capturing info
 userForm.addEventListener("submit", addUsers);
 
 function addUsers(e) {
     e.preventDefault();
     // text nodes for every user input
-    var userInput1 = document.createTextNode(firstName.value);
-    var userInput2 = document.createTextNode(lastName.value);
-    var userInput3 = document.createTextNode(email.value);
-    var userInput4 = document.createTextNode(phone.value);
+    userInput1 = document.createTextNode(firstName.value);
+    userInput2 = document.createTextNode(lastName.value);
+    userInput3 = document.createTextNode(email.value);
+    userInput4 = document.createTextNode(phone.value);
 
     newLi1 = document.createElement("li");
     newLi2 = document.createElement("li");
@@ -42,10 +46,10 @@ function addUsers(e) {
     newLi3.appendChild(userInput3);
     newLi4.appendChild(userInput4);
 
-    ul.appendChild(newLi1); 
+    /*ul.appendChild(newLi1); 
     ul.appendChild(newLi2); 
     ul.appendChild(newLi3); 
-    ul.appendChild(newLi4); 
+    ul.appendChild(newLi4); */
 
     console.log(users);
 
