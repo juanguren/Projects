@@ -19,33 +19,5 @@ nav ul{
 
 nav ul li a{
     color: whitesmoke;
-}
-
-.userModule{
-    width: 80%;
-    margin: 5em auto;
-}
-
-.userModule h3{
-    margin-bottom: 1em;
-    font-weight: 600;
-}
-
-#userForm{
-    display: grid;
-    border: solid 2px crimson;
-    gap: 1em;
-}
-
-#userForm input, button{
-    padding: .5rem;
-}
-
-#userForm button{
-    border: silver solid 1px;
-    cursor: pointer;
-}
-
-#userForm button:hover{
-    background: aqua;
+    text-decoration: none;
 }
