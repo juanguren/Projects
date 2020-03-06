@@ -43,6 +43,7 @@ nav ul li a{
 
 #userForm button{
     border: silver solid 1px;
+    cursor: pointer;
 }
 
 #userForm button:hover{
