@@ -1,0 +1,24 @@
+
+.product-Module{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 10em 2em;
+}
+
+.product-Module h1{
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    font-size: 2.5em;
+}
+
+.product-Container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border: solid 2px crimson;
+    grid-column-start: span 3;
+    margin-right: 3em;
+    gap: 0px;
+    width: 100%;
+}
