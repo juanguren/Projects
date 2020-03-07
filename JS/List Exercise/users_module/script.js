@@ -36,8 +36,8 @@ function addUsers(e) {
         success.innerHTML = "<h5>Unsuccessful</h5>" + `(`+e.message+`)`;
         throw new Error ("Fields are empty");
     } else{
-        success.innerHTML = "<h4>Successful!</h4>";
-        success.classList.add("successMessage");
+        success.innerHTML = "<h4>Successful! <br> Please order at the PRODUCTS tab </h4>";
+        success.classList.add("successMessage"); 
     // text nodes for every user input
         userInput1 = document.createTextNode(firstName.value);
         userInput2 = document.createTextNode(lastName.value);
