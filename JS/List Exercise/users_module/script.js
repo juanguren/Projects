@@ -1,10 +1,6 @@
 
 // Instatiate elements
 var userForm = document.querySelector("#userForm");
-var firstName = document.querySelector("#firstName");
-var lastName = document.querySelector("#lastName");
-var email = document.querySelector("#email");
-var phone = document.querySelector("#phone");
 var success = document.querySelector("#successMessage");
 var productLink = document.querySelector("#productsClick");
 
@@ -45,6 +41,13 @@ function addUsers(e) {
     } else{
         success.innerHTML = "<h4>Successful! <br> Please order at the PRODUCTS tab </h4>";
         success.classList.add("successMessage"); 
+
+        console.log(users);
+
+        users.push(new Users(firstName.value, lastName.value, email.value, phone.value));
+
+        localStorage.setItem("users", JSON.stringify(users));   
+        //var find = JSON.parse(localStorage.getItem("users"));
     /*
         // text nodes for every user input
         userInput1 = document.createTextNode(firstName.value);
@@ -68,15 +71,7 @@ function addUsers(e) {
         ul.appendChild(newLi2); 
         ul.appendChild(newLi3); 
         ul.appendChild(newLi4); */
-
-        console.log(users);
-
-        users.push(new Users(firstName.value, lastName.value, email.value, phone.value));
-
-        localStorage.setItem("users", JSON.stringify(users));   
-        //var find = JSON.parse(localStorage.getItem("users"));
-    }
-    
+    } 
 } 
 
 try {
