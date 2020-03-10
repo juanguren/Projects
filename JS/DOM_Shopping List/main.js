@@ -3,6 +3,7 @@
 const item = document.querySelector("#item-submit");
 const myForm = document.querySelector("#addForm");
 const ul = document.querySelector("#items");
+
 // Create array for storing items
 var arrayList = [];
 
@@ -77,14 +78,14 @@ search.addEventListener("keyup", searchItem);
 
 
 function searchItem(x) {
-    
+    // saves typed text in the (search) input form
     var text = x.target.value.toLowerCase();
     
     // Grab li´s within the UL
     var items = ul.querySelectorAll("li");    
-    // Converts li´s to array, given that everything is shown as one html component
-    Array.from(items).forEach(function(item) {
-        // Grab items exact content. Given that the previous array outputs x ammount of html components (x = ammount of items)
+    // Converts EACH li to array, given that everything is shown as one html component (special, non-effective array for this)
+    Array.from(items).forEach(function(item) { // forEach executes the conversion for every found item
+        // Grab items exact content. Given that the previous array outputs x ammount of html components
         var itemName = item.firstChild.textContent; // textContent grabs the entire, specific content of the child. --> innerText doesn´t work
         // Compares the typed input with the items exact name and index within the array
         if(itemName.toLowerCase().indexOf(text) != -1){ /* -1 outputs apparently every time there´s no match, so the != implies we´re
@@ -92,9 +93,9 @@ function searchItem(x) {
             item.style.display = "block";
         } else{ // while there´s no match, unrelated items are kept hidden
             item.style.display = "none";            
-        }
-        
-    })
-    
-    
+        } 
+    });    
 }
+
+
+
