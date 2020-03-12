@@ -1,4 +1,8 @@
 
+/**
+ * SECTION Products Module
+ **/ 
+
 var userLink = document.querySelector("#usersClick");
 userLink.addEventListener("click", userClick);
 

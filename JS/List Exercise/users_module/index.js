@@ -1,14 +1,12 @@
 
+/**
+ * SECTION USERS MODULE
+ */
+
+
 // Instatiate elements
 var userForm = document.querySelector("#userForm");
 var success = document.querySelector("#successMessage");
-var productLink = document.querySelector("#productsClick");
-
-productLink.addEventListener("click", productSelected);
-
-function productSelected(e) {
-    productLink.classList.add("productsClick_active");
-}
 
 //
 var ul = document.querySelector("#showUserList");
@@ -79,8 +77,6 @@ try {
 } catch (error) {
     console.log(error);
 }
-    
-    
     
 
 
