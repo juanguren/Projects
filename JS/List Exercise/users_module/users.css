@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-.productsClick_active{
-    color: crimson;
-}
-
 .userModule{
     width: 80%;
     margin: 3em auto;
