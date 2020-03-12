@@ -1,8 +1,17 @@
 
+.container{
+    
+}
+
 .product-Module{
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: 5em 2em;
+}
+
+#greetUser{
+    margin: 5em 2em;
+    position: absolute;
 }
 
 .product-Module h1{
