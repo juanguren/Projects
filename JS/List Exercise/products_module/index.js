@@ -3,13 +3,8 @@
  * SECTION Products Module
  **/ 
 
-var userLink = document.querySelector("#usersClick");
-userLink.addEventListener("click", userClick);
 
-function userClick (e) {
-    userLink.style.color = "crimson";
-}
-
+// Event for registering product´s unique ID
 var productCatalog = document.querySelector(".product-container");
 productCatalog.addEventListener("click", orderProduct);
 
@@ -20,3 +15,24 @@ function orderProduct(e) {
         
     }  e.stopPropagation();
 }
+
+//
+
+var find = JSON.parse(localStorage.getItem("users"));
+let test = document.querySelector("#show-local");
+
+console.log(find);
+
+for(key in find){
+    console.log(find[key]);
+}
+
+// Show the registered user at the beginning
+
+let userGreet = document.querySelector("#greetUser");
+let name = find[0].firstName;
+
+userGreet.innerText = "Hi" + " " + name + "!";
+
+
+
