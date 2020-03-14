@@ -1,17 +1,15 @@
 
-.container{
-    
-}
-
 .product-Module{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin: 5em 2em;
+    margin: 4em 2em;
 }
 
 #greetUser{
-    margin: 5em 2em;
-    position: absolute;
+    margin: 37px;
+    margin-top: 3em;
+    font-size: 30px;
+    position: fixed;
 }
 
 .product-Module h1{
@@ -20,6 +18,7 @@
     height: fit-content;
     align-self: center;
     font-size: 2.5em;
+    padding: 20px;
 }
 
 .product-container{
@@ -39,6 +38,7 @@
 }
 
 @media(max-width:991px) and (min-width: 768px){
+
     .product-Module{
         grid-template-areas:
         "title"
@@ -48,6 +48,13 @@
 
     .product-Module h1{
         grid-area: title;
+    }
+
+    #greetUser{
+        margin: 0;
+        margin-top: 2em;
+        text-align: center;
+        position: static;
     }
 
     .product-container{
@@ -69,6 +76,14 @@
 
     .product-Module h1{
         grid-area: title;
+        text-align: center;
+    }
+
+    #greetUser{
+        margin: 0;
+        margin-top: 2em;
+        text-align: center;
+        position: static;
     }
 
     .product-container{
