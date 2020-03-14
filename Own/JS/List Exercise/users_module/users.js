@@ -11,11 +11,12 @@ var success = document.querySelector("#successMessage");
 var ul = document.querySelector("#showUserList");
 
 class Users{
-    constructor(firstName, lastName, email, phone){
+    constructor(firstName, lastName, email, phone, product = []){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phone = phone;
+        this.product = product;
     }
 }
 
@@ -41,7 +42,7 @@ function addUsers(e) {
 
         console.log(users);
 
-        users.push(new Users(firstName.value, lastName.value, email.value, phone.value));
+        users.push(new Users(firstName.value, lastName.value, email.value, phone.value, ""));
 
         localStorage.setItem("users", JSON.stringify(users));   
         //var find = JSON.parse(localStorage.getItem("users"));
