@@ -22,4 +22,14 @@
     ul.appendChild(newLi1); 
     ul.appendChild(newLi2); 
     ul.appendChild(newLi3); 
-    ul.appendChild(newLi4); */
+    ul.appendChild(newLi4);
+    
+
+    var find = JSON.parse(localStorage.getItem("users"));
+
+    for(let i = 0; i<find.length; i++){
+    for(key in find[i]){
+        console.log(find[i][key]);
+    }
+}
+*/
