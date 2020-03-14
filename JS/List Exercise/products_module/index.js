@@ -23,8 +23,14 @@ let test = document.querySelector("#show-local");
 
 console.log(find);
 
-for(key in find){
-    console.log(find[key]);
+
+
+
+for(let i = 0; i<find.length; i++){
+    for(key in find[i]){
+        console.log(find[i][key]);
+    }
+    
 }
 
 // Show the registered user at the beginning
