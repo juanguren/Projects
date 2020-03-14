@@ -19,26 +19,22 @@ function orderProduct(e) {
 //
 
 var find = JSON.parse(localStorage.getItem("users"));
-let test = document.querySelector("#show-local");
+let userGreet = document.querySelector("#greetUser");
 
-console.log(find);
-
-
-
+let name;
 
 for(let i = 0; i<find.length; i++){
     for(key in find[i]){
-        console.log(find[i][key]);
+        name = find[i].firstName;
     }
-    
 }
 
-// Show the registered user at the beginning
-
-let userGreet = document.querySelector("#greetUser");
-let name = find[0].firstName;
-
+// Show (greet) the registered user at the top of the section
 userGreet.innerText = "Hi" + " " + name + "!";
+
+
+
+
 
 
 
