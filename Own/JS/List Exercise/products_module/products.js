@@ -10,15 +10,21 @@ var productCatalog = document.querySelector(".product-container");
 productCatalog.addEventListener("click", orderProduct);
 
 let products = [];
+let prices = [];
 
 function orderProduct(e) {
     if (e.target !== e.currentTarget) {
         var product = e.target.id;
-        console.log(product);
         
-        if (products.length >= 3) {
-            console.log("You just exceeded your limit");
-        } else{
+        if (products.length >= 4) {
+            console.log("You can only select 4!");
+
+        } else{    
+            let price = Math.floor(Math.random()*(1,30));        
+            prices.push(price);
+            console.log(prices);
+            localStorage.setItem("prices", JSON.stringify(prices));
+            
             products.push(product);        
             find[0].product = products;        
             localStorage.setItem("users", JSON.stringify(find));
