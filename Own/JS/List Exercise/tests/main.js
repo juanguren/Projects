@@ -1,6 +1,6 @@
 
 class Users{
-    constructor(firstName, lastName, email, phone, product = []){
+    constructor(firstName, lastName, email, phone, product = {}){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
