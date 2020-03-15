@@ -17,11 +17,11 @@ function orderProduct(e) {
         var product = e.target.id;
         
         if (products.length >= 4) {
-            console.log("You can only select 4!");
+            throw new Error(alert("Remember you can only select 4!"));
 
         } else{    
-            let price = Math.floor(Math.random()*(1,30));        
-            prices.push(price);
+            let price = Math.random()*(1,100);     
+            prices.push(parseFloat(price.toFixed(2)));
             console.log(prices);
             localStorage.setItem("prices", JSON.stringify(prices));
             
@@ -31,6 +31,15 @@ function orderProduct(e) {
             console.log(products);   
         }  
     }  e.stopPropagation();
+}
+
+try {
+    
+}
+
+catch(e){
+    console.log(e);
+    
 }
 
 // Show (greet) the registered user at the top of the section
