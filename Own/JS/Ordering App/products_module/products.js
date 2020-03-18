@@ -19,16 +19,18 @@ function orderProduct(e) {
         if (products.length >= 4) {
             throw new Error(alert("Remember you can only select 4!"));
 
-        } else{    
+        } else{  
+            // prices  
             let price = Math.random()*(1,100);     
             prices.push(parseFloat(price.toFixed(2)));
             console.log(prices);
             localStorage.setItem("prices", JSON.stringify(prices));
-            
+            // products
             products.push(product);        
             find[0].product = products;        
             localStorage.setItem("users", JSON.stringify(find));
-            console.log(products);   
+            console.log(products);  
+            $.notify(product + " added", "success"); 
         }  
     }  e.stopPropagation();
 }
