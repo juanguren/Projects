@@ -65,7 +65,7 @@ let mathCalculations = (number) =>{
                         }
                     }
                 }
-                factorial(number); // number es el prompt
+                factorial(number); // number is the prompt
                 resolve("Factorial promise is resolved");
             } else{
                 reject("Factorial promise was not resolved");
