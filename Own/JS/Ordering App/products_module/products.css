@@ -35,6 +35,13 @@
 }
 
 @media(max-width:1199px) and (min-width: 992px){
+    
+    #greetUser{
+        margin: 0;
+        margin-left: 1.5em;
+        margin-top: 2em;
+        position: static;
+    }
 }
 
 @media(max-width:991px) and (min-width: 768px){
