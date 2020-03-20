@@ -51,9 +51,7 @@ let name;
 let userProduct;
 
 for(let i = 0; i<find.length; i++){
-    for(key in find[i]){
-        name = find[i].firstName;
-    }
+    name = find[i].firstName;
 }
 
 userGreet.innerText = "Hi" + " " + name + "!";
