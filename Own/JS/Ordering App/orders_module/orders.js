@@ -19,7 +19,9 @@ for(let i = 0; i<users.length; i++){
     }
 }
 
-// this loop finds, concatenates and saves the user full name
+/* this loop finds, concatenates and saves the user full name
+(it works on the assumption that there will be just 1 registered user, which is not very
+    efficient.)  */
 for(let i = 0; i<users.length; i++){
     fullName = users[i].firstName + " " + users[i].lastName;
 }
