@@ -49,7 +49,7 @@ let showOrder = (e) =>{
         const sum = prices.reduce((acc, cv) =>{
             return acc + cv;
         }, 0);
-        let totalPrice = document.createTextNode(sum);
+        let totalPrice = document.createTextNode(sum.toFixed(2));
         tdPrice.appendChild(totalPrice);
         tr.appendChild(tdPrice);
 
