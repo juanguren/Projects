@@ -19,6 +19,16 @@
     cursor: pointer;
 }
 
+#loading{
+    margin-top: 7px;
+    font-size: 14px;
+    color: crimson;
+}
+
+.loading-close{
+    display: none;
+}
+
 .orders-content{
     display: table;
     margin: 0 auto;
