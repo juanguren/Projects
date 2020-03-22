@@ -28,7 +28,6 @@ for(let i = 0; i<users.length; i++){
 
 // this event  
 let showOrder = (e) =>{
-    
     clickCount ++;
     if (clickCount <= 1) {
         // create the 4 elements for revealing user info
