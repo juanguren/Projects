@@ -59,7 +59,7 @@ let showOrder = (e) =>{
         
                 // appends everything to the table
                 table.appendChild(tr);
-                
+
                 // removes loading text when information appears
                 loading.classList.add("loading-close");
                 
@@ -67,9 +67,15 @@ let showOrder = (e) =>{
                 console.log("NO");
             }
         } else{
-            console.log("A set of (local) data is missing!");
+            throw new Error("A set of (local) data is missing!");
        }
     }, 2000);
+}
+
+try {
+
+} catch (error) {
+    console.log(error.message + " " + error);
 }
     
 console.log(users);
