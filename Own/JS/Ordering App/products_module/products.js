@@ -17,8 +17,8 @@ function orderProduct(e) {
         var product = e.target.id;
         
         if (products.length >= 4) {
-            throw new Error(alert("Remember you can only select 4!"));
-
+            $.notify("Remember you can only select 4!", "error"); 
+            throw new Error("Remember you can only select 4");
         } else{  
             // prices  
             let price = Math.random()*(1,100);     
