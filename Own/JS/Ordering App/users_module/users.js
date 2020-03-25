@@ -20,6 +20,8 @@ class Users{
     }
 }
 
+Object.freeze(Users);
+
 var users = [];
 
 var userInput1;
