@@ -7,7 +7,7 @@
   <li>Classes</li>
   <li>Local Storage</li>
   <li>Functions</li>
-  <li>The DOM</li>
+  <li>DOM</li>
 </ul>
 
 <h4>HTML5 & CSS3:</h4>
