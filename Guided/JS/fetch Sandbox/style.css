@@ -36,6 +36,7 @@ header{
 .inputs{
     margin: auto auto;
     width: 600px;
+    text-align: center;
 }
 
 .inputs form{
