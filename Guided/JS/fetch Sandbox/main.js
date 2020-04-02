@@ -22,7 +22,7 @@ let textResultDiv = textResult.parentElement;
 // Create event for clicking
 buttonText.addEventListener("click", fetchText);
 
-let clickCount = 0;
+let clickCount = 0; // hehe :)
 // Main text event function
 function fetchText() {
     clickCount++;
@@ -39,3 +39,21 @@ function fetchText() {
         });
 }
 
+// SECTION JSON events
+
+// Instantiate elements
+let buttonJSON = document.querySelector("#getJSON");
+
+// Event
+buttonJSON.addEventListener("click", fetchJSON);
+
+function fetchJSON() {
+    fetch("JSON/content.json")
+        .then(res => res.json())
+        .then((data) =>{
+            console.log(data);
+            for(i in data){
+                console.log(data[i].name + " " + data[i].last_name);  
+            }
+    });
+}
