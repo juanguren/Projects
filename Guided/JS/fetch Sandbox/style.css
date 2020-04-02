@@ -25,11 +25,18 @@ header{
     border: none;
     padding: .5em 1em;
     background: none;
-    border: solid 2px salmon;
+    border: solid 1.5px wheat;
+}
+
+.buttons button:nth-child(odd):hover{
+    background-color:  silver;
+}
+
+.buttons button:nth-child(even):hover{
+    background-color: salmon;
 }
 
 .buttons button:hover{
-    background-color: wheat;
     font-weight: 600;
 }
 
