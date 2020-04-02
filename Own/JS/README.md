@@ -1,4 +1,4 @@
-<h2>This is a simple ordering app built using Vanilla JS (as practice)</h2>
+<h2>This is a simple ordering app, built using Vanilla JS (as practice)</h2>
 
 <h3>USING:</h3>
 
