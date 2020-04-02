@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Juan",
+        "last name": "Aranguren",
+        "website": "juanguren.github.io"
+    },
+    {
+        "id": 2,
+        "name": "Hugo",
+        "last name": "Weaving",
+        "website": "mrweaving.com"
+    },
+    {
+        "id": 3,
+        "name": "Elon",
+        "last name": "Musk",
+        "website": "spacefuturealways.com"
+    }
+]
