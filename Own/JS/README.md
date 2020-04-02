@@ -14,4 +14,5 @@
 <ul>
   <li>Flexbox</li>
   <li>GRID</li>
+  <li>Breakpoints</li>
 </ul>
