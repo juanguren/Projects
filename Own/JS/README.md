@@ -1,6 +1,6 @@
 <h2>This is a simple ordering app, built using Vanilla JS (as practice)</h2>
 
-<h3>USING:</h3>
+<h3>USED:</h3>
 
 <h4>Javascript:</h4>
 <ul>
