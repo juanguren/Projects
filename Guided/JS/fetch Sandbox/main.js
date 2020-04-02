@@ -4,7 +4,7 @@
  *      - Grab data (x)
  *      - Append it to the DOM (x)
  * 2. Fetch content frm JSOn file inside folder
- *      - Grab data
+ *      - Grab data (x)
  *      - Append it
  * 3. Fetch content from API
  *      - Grab it using async
