@@ -1,8 +1,8 @@
 /**
  * TODO :
  * 1. Fetch content from text file inside folder
- *      - Grab data
- *      - Append it to the DOM
+ *      - Grab data (x)
+ *      - Append it to the DOM (x)
  * 2. Fetch content frm JSOn file inside folder
  *      - Grab data
  *      - Append it
@@ -38,3 +38,4 @@ function fetchText() {
             }
         });
 }
+
