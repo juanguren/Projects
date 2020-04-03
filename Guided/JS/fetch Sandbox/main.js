@@ -6,7 +6,7 @@
  * 2. Fetch content frm JSOn file inside folder
  *      - Grab data (x)
  *      - Append it
- *      - Surround it by "new Promise" for error handling
+ *      - Use catch or "new Promise" for error handling.. (look for the best)
  * 3. Fetch content from API
  *      - Grab it using async
  *      - Append it on mulltiple grids
