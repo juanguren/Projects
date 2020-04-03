@@ -35,7 +35,7 @@ function fetchText() {
                 textResult.innerText = data;
                 textResultDiv.classList.add("inputs");
             } else{
-                textResultDiv.classList.toggle("not-active");
+                textResultDiv.classList.toggle("inactive");
             }
         });
 }
