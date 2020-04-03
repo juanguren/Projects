@@ -64,7 +64,23 @@ header{
     cursor: pointer;
 }
 
-.not-active{
+.inactive{
     display: none;
+}
+
+.json-data{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    width: 95%;
+}
+
+.json-data ul{
+    list-style: none;
+    font-family: 'Sen', sans-serif;
+}
+
+.json-data ul li{
+    border: solid .5px gray;
 }
 
