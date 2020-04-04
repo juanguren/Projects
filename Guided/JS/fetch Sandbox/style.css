@@ -85,3 +85,18 @@ header{
     border: solid .5px gray;
 }
 
+#loading-message{
+    margin-top: 0;
+    color: whitesmoke;
+}
+
+.api-data{
+    width: 100%;
+}
+
+.api-data ul{
+    list-style: none;
+    font-size: 13px;
+    border: solid .5px black;
+}
+

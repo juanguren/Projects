@@ -86,17 +86,47 @@ function fetchJSON() {
 
 // instantiate elements
 let buttonAPI = document.getElementById("getAPI");
+let apiSection = document.querySelector(".api-data");
+let loading = document.getElementById("loading-message");
+
+clickCount2 = 0;
 
 // Event
 buttonAPI.addEventListener("click", fetchAPI);
 
-function fetchAPI() {
-    setTimeout(() => {
-        fetch("https://jsonplaceholder.typicode.com/posts")
-            .then((search) => search.json())
-            .then((data) => {
-                let filter = data.filter(c =>
-                    c.userId === 1)
-            })
-    }, 500);
+async function fetchAPI() {
+    clickCount2++;
+    loading.innerText = "Loading...";
+    return await new Promise((res, rej) =>{
+        if (clickCount2 <= 1) {
+            setTimeout(() => {
+                let output = "";
+                fetch("https://jsonplaceholder.typicode.com/posts")
+                    .then((search) => search.json())
+                    .then((data) => {
+                        let filter = data.filter(c =>
+                            c.userId === 1)
+                            for(i in filter){
+                                output += 
+                                `<ul>
+                                    <li>${filter[i].id}</li>
+                                    <li><h2>${filter[i].title}</h2></li>
+                                    <li>${filter[i].body}</li>
+                                </ul>`;
+                                console.log(filter[i].userId);
+                            }
+                        apiSection.innerHTML = output; 
+                        loading.style.display = "none"; 
+                        res("Everything OK");  
+                    });
+            }, 1000);
+        } else{
+            rej("Two clicks recognized");
+            apiSection.classList.toggle("inactive");
+        }
+    }).then((resolve) =>{
+        console.log(resolve);
+    }).catch((reject) =>{
+        console.log(reject);
+    });
 }
