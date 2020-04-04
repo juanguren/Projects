@@ -130,3 +130,27 @@ async function fetchAPI() {
         console.log(reject);
     });
 }
+
+// SECTION Post 
+
+// Instantiate elements
+let postBtn = document.getElementById("post");
+let postSection = document.querySelector(".inputs");
+
+let form = document.getElementById("formPost");
+let title = document.querySelector("#titleSubmit");
+let body = document.querySelector("#bodySubmit");
+
+post.addEventListener("click", showPost);
+
+function showPost() {
+    postSection.classList.toggle("inactive");
+}
+
+form.addEventListener("submit", sendInfo);
+
+function sendInfo(e) {
+    e.preventDefault();
+    console.log(title.value);
+    console.log(body.value);
+}
