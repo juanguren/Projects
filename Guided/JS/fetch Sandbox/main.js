@@ -44,6 +44,7 @@ function fetchText() {
 
 // Instantiate elements
 let buttonJSON = document.querySelector("#getJSON");
+let jsonSection = document.querySelector(".json-data");
 
 // Event
 buttonJSON.addEventListener("click", fetchJSON);
@@ -52,9 +53,19 @@ function fetchJSON() {
     fetch("JSON/content.json")
         .then(res => res.json())
         .then((data) =>{
-            console.log(data);
-            for(i in data){
-                console.log(data[i].name + " " + data[i].last_name);  
-            }
+            let output;
+            data.forEach((user) =>{
+                if (data[user] === undefined) {
+                    delete data[user];
+                }
+                output +=
+                `<ul>
+                    <li>${user.name + " " + user.last_name}</li>
+                    <li><a href = "${user.website}">${user.website}</a></li>
+                </ul>`;
+            });
+        jsonSection.innerHTML = output;
+        console.log(output);
+        console.log(jsonSection);
     });
 }
