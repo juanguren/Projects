@@ -6,11 +6,11 @@
  * 2. Fetch content frm JSOn file inside folder
  *      - Grab data (x)
  *      - Append it (x)
- *      - Remove the "undefined" message
- *      - Use catch or "new Promise" for error handling.. (look for the best)
+ *      - Remove the "undefined" message (x)
+ *      - Use catch or "new Promise" for error handling.. (look for the best) (x)
  * 3. Fetch content from API
- *      - Grab it using async
- *      - Append it on mulltiple grids
+ *      - Grab it using async (x)
+ *      - Append it on mulltiple grids (x)
  */
 
 
