@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fetch API Sandbox</h1>
+        </header>
+        <section class="buttons">
+            <button id="getText">Get Text</button>
+            <button id="getJSON">Get JSON</button>
+            <button id="getAPI">Get API Data</button>
+            <button id="post">"Post" Data</button>
+        </section>
+        <div><h4 id="textResult"></h4></div>
+        <section class="json-data"> 
+        </section>
+        <h4 id="loading-message"></h4>
+        <section class="api-data">
+        </section>
+        <section class="inputs inactive">
+            <form id="formPost" action="">
+                <input id="titleSubmit" type="text" placeholder="Title">
+                <textarea id="bodySubmit" cols="30" rows="3" placeholder="Body"></textarea>
+                <button id="sendPost" type="submit">SUBMIT</button>
+            </form>
+            <h3 id="post-message"></h3>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

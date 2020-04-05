@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Juan",
+        "last_name": "Aranguren",
+        "website": "juanguren.github.io"
+    },
+    {
+        "id": 2,
+        "name": "Josefa",
+        "last_name": "de Roa",
+        "website": "forthegoodeveryone.com"
+    },
+    {
+        "id": 3,
+        "name": "Hugo",
+        "last_name": "Weaving",
+        "website": "mrweaving.com"
+    },
+    {
+        "id": 4,
+        "name": "Elon",
+        "last_name": "Musk",
+        "website": "spacefuturealways.com"
+    }
+]
