@@ -142,12 +142,16 @@ let postBtn = document.getElementById("post");
 let postSection = document.querySelector(".inputs");
 
 let form = document.getElementById("formPost");
-
+let clickCount3 = 0;
 
 post.addEventListener("click", showPost);
 
 function showPost() {
+    clickCount3++;
     postSection.classList.toggle("inactive");
+    if (clickCount3 > 1) {
+        location.reload();
+    }
 }
 
 form.addEventListener("submit", sendInfo);
