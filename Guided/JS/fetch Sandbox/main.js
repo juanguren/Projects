@@ -11,6 +11,10 @@
  * 3. Fetch content from API
  *      - Grab it using async (x)
  *      - Append it on mulltiple grids (x)
+ * 4. Post content from the DOM to an external source
+ *      - Capture input values (x)
+ *      - Send them via external JSON (x)
+ *      - TODO find out errors when sending to local JSON...
  */
 
 
@@ -51,7 +55,7 @@ let jsonUl = jsonSection.children;
 
 let clickCount1 = 0;
 
-// Event TODO Fix "undefined"
+// Event 
 buttonJSON.addEventListener("click", fetchJSON);
 
 function fetchJSON() {
@@ -138,8 +142,6 @@ let postBtn = document.getElementById("post");
 let postSection = document.querySelector(".inputs");
 
 let form = document.getElementById("formPost");
-let title = document.querySelector("#titleSubmit");
-let body = document.querySelector("#bodySubmit");
 
 post.addEventListener("click", showPost);
 
@@ -151,6 +153,27 @@ form.addEventListener("submit", sendInfo);
 
 function sendInfo(e) {
     e.preventDefault();
-    console.log(title.value);
-    console.log(body.value);
+    let title = document.querySelector("#titleSubmit");
+    let body = document.querySelector("#bodySubmit");
+    let h3 = document.getElementById("post-message");
+
+    fetch("https://jsonplaceholder.typicode.com/posts", 
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            title: title.value, 
+            body: body.value
+        })
+    }).then(res => res.json())
+      .then((data) =>{
+          h3.innerText = "Success!";
+          h3.style.color = "silver";
+          title.value = "";
+          body.value = "";
+          console.log(data);
+      })
 }
+
