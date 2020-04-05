@@ -143,6 +143,7 @@ let postSection = document.querySelector(".inputs");
 
 let form = document.getElementById("formPost");
 
+
 post.addEventListener("click", showPost);
 
 function showPost() {
@@ -157,7 +158,9 @@ function sendInfo(e) {
     let body = document.querySelector("#bodySubmit");
     let h3 = document.getElementById("post-message");
 
-    fetch("https://jsonplaceholder.typicode.com/posts", 
+    h3.innerText = "Loading..."
+    setTimeout(() => {
+        fetch("https://jsonplaceholder.typicode.com/posts", 
     {
         method: "POST",
         headers: {
@@ -169,11 +172,13 @@ function sendInfo(e) {
         })
     }).then(res => res.json())
       .then((data) =>{
-          h3.innerText = "Success!";
           h3.style.color = "silver";
+          h3.innerText = "Success!";
           title.value = "";
           body.value = "";
           console.log(data);
       })
+    }, 2000);
+    
 }
 
