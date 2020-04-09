@@ -33,6 +33,7 @@ let clickCount = 0; // hehe :)
 // Main text event function
 function fetchText() {
     clickCount++;
+
     fetch("text/content.txt")
         .then((res) => res.text())
         .then((data) =>{
