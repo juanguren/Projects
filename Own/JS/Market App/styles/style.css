@@ -9,10 +9,15 @@
 header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: .5em;
 }
 
 .logo{
     margin: 1em 2em;
+}
+
+.logo img{
+    max-width: 110px;
 }
 
 .nav ul{
@@ -32,8 +37,56 @@ header{
 
 /* SECTION Main content */
 
+.explain{
+    text-align: center;
+    margin: 4em auto;
+    background-color: midnightblue;
+    padding: 1.5em;
+    color: whitesmoke;
+}
+
+.explain img{
+    max-width: 95px;
+    margin-top: 1em;
+}
+
+.explain span{
+    font-size: large;
+    font-weight: 800;
+}
+
+#p1{
+    margin-top: 2em;
+}
+
+#p1 span{
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.5rem;
+    font-weight: 500;
+} 
+
+#p2{
+    margin-top: 1.5em;
+}
+
+#p2 span{
+    line-height: 1.5rem;
+    font-family: 'Manrope', sans-serif;
+    color: aquamarine;
+}
 
 /* SECTION Footer */
+
+footer{
+    text-align: center;
+}
+
+footer h4 span img{
+    max-width: 20px;
+    max-height: 20px;
+    margin: 0;
+    padding: 0;
+}
 
 
 @media(min-width:1200px){
