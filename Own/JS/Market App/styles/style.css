@@ -32,7 +32,14 @@ header{
 
 .nav ul li a{
     text-decoration: none;
-    color: blue;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.nav ul li a:hover{
+    border: solid 2px midnightblue;
+    padding: 5px;
 }
 
 /* SECTION Main content */
@@ -70,7 +77,7 @@ header{
 }
 
 #p2 span{
-    line-height: 1.5rem;
+    line-height: 2rem;
     font-family: 'Manrope', sans-serif;
     color: aquamarine;
 }
@@ -79,6 +86,7 @@ header{
 
 footer{
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer h4 span img{
