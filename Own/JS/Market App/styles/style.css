@@ -1,0 +1,49 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SECTION Header */
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logo{
+    margin: 1em 2em;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 3em;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: blue;
+}
+
+/* SECTION Main content */
+
+
+/* SECTION Footer */
+
+
+@media(min-width:1200px){
+}
+
+@media(max-width:1199px) and (min-width: 992px){
+}
+
+@media(max-width:991px) and (min-width: 768px){
+}
+
+@media(max-width:767px){
+}
