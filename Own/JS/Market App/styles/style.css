@@ -82,23 +82,7 @@ header{
     color: aquamarine;
 }
 
-/* SECTION Footer */
-
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 4.5rem; 
-    /*margin-top: 10em;*/
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-
-footer h4 span img{
-    max-width: 20px;
-    max-height: 20px;
-}
-
+/* SECTION Footer --------> Independant file */
 
 @media(min-width:1200px){
 }
