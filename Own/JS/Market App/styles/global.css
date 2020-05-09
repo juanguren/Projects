@@ -1,4 +1,10 @@
 
+:root{
+    --main_font: font-family: 'Manrope', sans-serif;
+    --version_font: font-family: 'Roboto', sans-serif;
+    --version_font_weight: font-weight: 600;
+}
+
 footer{
     position: absolute;
     bottom: 0;
