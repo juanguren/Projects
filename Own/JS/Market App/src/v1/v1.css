@@ -84,15 +84,24 @@ header{
     justify-items: center;
     gap: 1.5em;
     margin-top: 3rem;
+    font-size: 15px;
 }
 
-.ticker-information > div{
+.ticker-information div{
     border: solid crimson 2px;
     width: 30%;
     text-align: center;
 }
 
+.ticker-information .result1{
+    width: 40%;
+}
+
 .results-container{
     display: grid;
     grid-template-columns: auto auto;
+}
+
+.hidden{ /* Appendable class */
+    display: none;
 }
