@@ -17,6 +17,7 @@ header{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    margin-top: 1em;
 }
 
 #logo{
@@ -45,6 +46,7 @@ header{
 
 #btn-modal:hover{
     background-color: midnightblue;
+    border: solid silver 2px;
     color: whitesmoke;
     transition: background-color 0.5s ease;
 }
@@ -53,7 +55,7 @@ header{
 
 .ticker-search{
     text-align: center;
-    margin-top: 5em;
+    margin-top: 6em;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -88,4 +90,9 @@ header{
     border: solid crimson 2px;
     width: 30%;
     text-align: center;
+}
+
+.results-container{
+    display: grid;
+    grid-template-columns: auto auto;
 }
