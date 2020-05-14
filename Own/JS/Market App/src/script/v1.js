@@ -6,6 +6,7 @@
 
 let searchInput = document.getElementById("send-ticker");
 let searchValue = document.getElementById("input-asset");
+let divContainer = document.getElementById("container");
 
 searchInput.addEventListener("submit", getTickerResults);
 
@@ -32,6 +33,8 @@ let resultsDiv = document.querySelector(".ticker-information");
 
 function appendResults_DOM(data) {
 
+    divContainer.classList.add("container");
+
     let divResult1 = document.querySelector(".result1").childNodes;
     let divResult2 = document.querySelector(".result2").childNodes;
     let divResult3 = document.querySelector(".result3").childNodes;
@@ -57,7 +60,6 @@ function appendResults_DOM(data) {
 
         divResult5[1].innerText = "Volume";
         divResult5[3].innerText = volume;
-        console.log(data);
 
     } else{
         console.log("Check your input!");
