@@ -1,12 +1,15 @@
 
 /**
  * TODO
- *      
+ *  watchify v1.js -o bundle.js -v    
 */
+
+//const Ticker = require("./search_class");
 
 let searchInput = document.getElementById("send-ticker");
 let searchValue = document.getElementById("input-asset");
 let divContainer = document.getElementById("container");
+let savedTickers = [];
 
 searchInput.addEventListener("submit", getTickerResults);
 
@@ -44,7 +47,7 @@ function appendResults_DOM(data) {
     if (data) {
         resultsDiv.classList.remove("hidden");
 
-        const {name, price, open, dayLow, volume} = data;
+        const {name, price, open, dayLow, dayHigh} = data;
 
         divResult1[1].innerText = "Name:";
         divResult1[3].innerText = name;
@@ -55,17 +58,24 @@ function appendResults_DOM(data) {
         divResult3[1].innerText = "Open:";
         divResult3[3].innerText = open;
 
-        divResult4[1].innerText = "Day Low";
+        divResult4[1].innerText = "Day Low:";
         divResult4[3].innerText = dayLow;
 
-        divResult5[1].innerText = "Volume";
-        divResult5[3].innerText = volume;
+        divResult5[1].innerText = "Day High:";
+        divResult5[3].innerText = dayHigh;
+
+        let newTicker = new Ticker(name, price, open, dayLow, dayHigh);
+        savedTickers.push(newTicker);
+        console.log(Ticker);       
+        console.log(savedTickers); 
 
     } else{
         console.log("Check your input!");
     }
 }
 
+let modal = document.getElementById("btn-modal");
 
-
-
+modal.addEventListener("click", () =>{
+    
+})
