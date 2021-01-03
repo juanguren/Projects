@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list{
+    align-items: start;
+    margin: 10px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas: 
+    "me one two three";
+    justify-content: start;
+    gap: 3em;
+}
+
+.me{ 
+    grid-area: me;
+    grid-column-start: span 3;
+    text-align: center;
+}
+.one{ grid-area: one; }
+.two{ grid-area: two; }
+.three{ grid-area: three; } 
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
+@media all and (min-width: 768px) and (max-width: 1024px) {}
+@media all and (min-width: 480px) and (max-width: 768px) {}
+@media all and (max-width: 480px) {
+    .menu-list{
+        gap: 0;
+        text-align: center;
+        justify-content: center;
+        grid-template-areas: 
+        "me"
+        "one"
+        "two"
+        "three";
+    }
+}
