@@ -27,6 +27,8 @@
 .three{ grid-area: three; } 
 
 .image-grid{
+    background-color: cadetblue;
+    padding: 2em;
     margin-top: 2em;
     display: flex;
     justify-content: center;
@@ -38,6 +40,16 @@
     width: 10em;
     height: 15em;
     object-fit: cover;
+}
+
+.description-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1.5em;
+}
+
+.description-grid p{
+    margin: 1em;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
