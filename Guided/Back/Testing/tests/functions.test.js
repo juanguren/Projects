@@ -24,4 +24,3 @@ test('Should return object with a number divided by 2', () => {
         type: expect.any(String)
     });
 });
-
