@@ -14,8 +14,14 @@ const backWord = (word) =>{
 }
 
 const execute = (param) =>{
+    const added = Math.floor(param / 2);
+    let type;
+    typeof added === 'number' 
+     ? type = 'Number'
+     : type = "Other"
     return {
-        param
+        added,
+        type
     }
 }
 
@@ -30,10 +36,6 @@ const objectTest = (param) =>{
 
 module.exports = {
     backWord,
-    objectTest
-};
-
-module.exports = {
-    returnSum,
-    backWord
+    objectTest,
+    returnSum
 };

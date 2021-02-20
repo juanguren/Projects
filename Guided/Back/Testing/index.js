@@ -2,7 +2,7 @@
 const {
     returnSum
 } = require('./src/functions');
-const { backWord, objectTest } = require('./src/function2');
+const { backWord, objectTest } = require('./src/functions');
 
 console.log(returnSum(5,5));
 
