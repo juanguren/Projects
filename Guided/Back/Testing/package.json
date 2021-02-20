@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "test:watch": "jest --watch"
   },
   "author": "JF",
   "license": "ISC",

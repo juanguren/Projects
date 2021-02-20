@@ -14,8 +14,9 @@ const backWord = (word) =>{
 }
 
 const execute = (param) =>{
+    const added = Math.floor(param / 2);
     return {
-        param
+        added
     }
 }
 
@@ -30,10 +31,6 @@ const objectTest = (param) =>{
 
 module.exports = {
     backWord,
-    objectTest
-};
-
-module.exports = {
-    returnSum,
-    backWord
+    objectTest,
+    returnSum
 };
