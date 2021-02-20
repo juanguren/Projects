@@ -15,8 +15,13 @@ const backWord = (word) =>{
 
 const execute = (param) =>{
     const added = Math.floor(param / 2);
+    let type;
+    typeof added === 'number' 
+     ? type = 'Number'
+     : type = "Other"
     return {
-        added
+        added,
+        type
     }
 }
 

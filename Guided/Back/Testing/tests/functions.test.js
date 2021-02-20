@@ -14,13 +14,14 @@ test('Sum Function', () =>{
 });
 
 test('Should reverse string ', () => {
-    const word = "Hola"
+    const word = "Hola";
     expect(backWord(word)).toEqual('aloH');
 });
 
 test('Should return object with a number divided by 2', () => {
     expect(objectTest(100)).toMatchObject({
-        added: 50
+        added: 50,
+        type: expect.any(String)
     });
 });
 
